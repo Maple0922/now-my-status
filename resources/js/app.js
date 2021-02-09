@@ -1,35 +1,22 @@
-import VueRouter from 'vue-router';
+import Vuetify from 'vuetify';
+import 'vuetify/dist/vuetify.min.css';
+import router from './router';
+import '@mdi/font/css/materialdesignicons.css';
 
 import HeaderComponent from "./components/HeaderComponent";
-import HomeComponent from "./components/HomeComponent";
-import DashboardComponent from "./components/DashboardComponent";
 
 require('./bootstrap');
 
 window.Vue = require('vue').default;
 
-Vue.use(VueRouter);
-
-
-const router = new VueRouter({
-    mode: 'history',
-    routes: [
-        {
-            path: '/',
-            name: 'dashboard',
-            component: DashboardComponent
-        },
-        {
-            path: '/home',
-            name: 'home',
-            component: HomeComponent
-        },
-    ]
-});
+Vue.use(Vuetify);
 
 Vue.component('HeaderComponent', HeaderComponent);
 
+
+
 const app = new Vue({
     el: '#app',
+    vuetify: new Vuetify(),
     router
 });

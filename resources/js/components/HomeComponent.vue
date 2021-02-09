@@ -1,15 +1,16 @@
 <template>
-  <section class="container home">
-    <h2 class="container__title">Home</h2>
-    <p class="container__message">Hello! This is home.</p>
-    <router-link v-bind:to="{ name: 'dashboard' }">
-      <button class="btn container__button">Dashboard</button>
-    </router-link>
-  </section>
+  <v-app>
+    <section class="container home">
+      <StateCardComponent />
+    </section>
+  </v-app>
 </template>
 
 <script>
+import StateCardComponent from "./Home/StateCardComponent.vue";
+
 export default {
+  components: { StateCardComponent },
   name: "HomeComponent",
 };
 </script>
