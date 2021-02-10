@@ -1,6 +1,6 @@
 <template>
-  <v-container class="orange lighten-3">
-    <StateEditComponent />
+  <v-container class="orange lighten-3 pb-0">
+    <StateEditComponent :id="id" />
   </v-container>
 </template>
 
@@ -10,6 +10,7 @@ import StateEditComponent from "./Edit/StateEditComponent.vue";
 export default {
   components: { StateEditComponent },
   name: "EditComponent",
+  props: ["id"],
 };
 </script>
 

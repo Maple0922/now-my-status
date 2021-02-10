@@ -1,10 +1,10 @@
 <template>
   <v-card class="mx-auto mb-4" max-width="400">
-    <EditTitleComponent />
+    <EditTitleComponent :name="state.name" />
     <EditSelectComponent />
     <EditSliderComponent />
     <EditTextComponent />
-    <EditButtonsComponent />
+    <EditButtonsComponent :id="state.id" />
   </v-card>
 </template>
 
@@ -23,6 +23,20 @@ export default {
     EditSelectComponent,
     EditTextComponent,
     EditButtonsComponent,
+  },
+  data: () => ({
+    state: {},
+  }),
+  props: ["id"],
+  methods: {
+    getState(id) {
+      axios.get("/api/states/" + id).then((res) => {
+        this.state = res.data;
+      });
+    },
+  },
+  mounted() {
+    this.getState(this.id);
   },
 };
 </script>

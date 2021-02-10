@@ -7,7 +7,8 @@
       item-value="id"
       v-model="state"
       label="Select a state!"
-      filled
+      solo
+      class="bg-grey"
     ></v-select>
   </v-col>
 </template>
@@ -32,6 +33,3 @@ export default {
   },
 };
 </script>
-
-<style lang="scss" scoped>
-</style>>

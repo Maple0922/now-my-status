@@ -3,7 +3,7 @@
     <v-subheader class="pl-0">元気</v-subheader>
     <v-slider
       v-model="slider"
-      :thumb-size="24"
+      :thumb-size="28"
       thumb-label="always"
       readonly
       min="1"
@@ -30,6 +30,3 @@ export default {
   },
 };
 </script>
-
-<style lang="scss" scoped>
-</style>>

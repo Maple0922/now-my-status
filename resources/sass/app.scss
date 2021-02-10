@@ -5,13 +5,16 @@
 @import 'variables';
 
 // Addiction
-.container {
-  padding-top: 24px;
-  padding-bottom: 24px;
-  &__description {
-    font-size: 16px;
+div.v-slider__thumb-label.primary > div > span {
+  font-size: 16px !important;
+}
+
+.bg-grey {
+  .v-input__slot {
+    background-color: $superlightgray!important;
   }
-  &__button {
-    color: $white;
-  }
+}
+
+.v-btn__content {
+  text-transform: none;
 }

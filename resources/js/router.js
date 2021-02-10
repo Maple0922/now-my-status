@@ -15,9 +15,34 @@ export default new VueRouter({
       component: HomeComponent
     },
     {
-      path: '/edit',
+      path: '/edit/:id',
       name: 'edit',
-      component: EditComponent
+      component: EditComponent,
+      props: true
     },
   ]
+  // routes: [
+  //   {
+  //     path: '/tasks',
+  //     name: 'task.list',
+  //     component: TaskListComponent
+  //   },
+  //   {
+  //     path: '/tasks/:taskId',
+  //     name: 'task.show',
+  //     component: TaskShowComponent,
+  //     props: true
+  //   },
+  //   {
+  //     path: '/tasks/create',
+  //     name: 'task.create',
+  //     component: TaskCreateComponent
+  //   },
+  //   {
+  //     path: '/tasks/:taskId/edit',
+  //     name: 'task.edit',
+  //     component: TaskEditComponent,
+  //     props: true
+  //   },
+  // ]
 });

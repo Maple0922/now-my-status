@@ -2,7 +2,7 @@
   <v-col class="d-flex align-center py-0" cols="8">
     <v-subheader class="pl-0" style="word-break: keep-all">状態</v-subheader>
     <p
-      class="rounded-xl mb-0 px-4 py-2 state lighten-3"
+      class="rounded-xl mb-0 state lighten-3 text-body-2"
       :class="items[nowStateId].color"
     >
       {{ items[nowStateId].text }}
@@ -32,4 +32,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.state {
+  padding: 6px 8px;
+}
 </style>

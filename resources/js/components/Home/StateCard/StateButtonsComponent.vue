@@ -1,11 +1,19 @@
 <template>
   <v-card-actions class="flex-row justify-end">
-    <v-btn color="orange" dark :to="{ name: 'edit' }">Edit</v-btn>
+    <v-btn color="orange" dark :to="{ name: 'edit', params: { id: id } }"
+      >Edit</v-btn
+    >
+    <v-btn color="red" dark :to="{ name: 'delete', params: { id: id } }"
+      >Delete</v-btn
+    >
   </v-card-actions>
 </template>
 
 <script>
 export default {
   name: "StateButtonsComponent",
+  props: {
+    id: Number,
+  },
 };
 </script>

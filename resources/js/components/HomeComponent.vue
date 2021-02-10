@@ -1,9 +1,7 @@
 <template>
-  <section class="container home blue lighten-3">
+  <v-container class="home blue lighten-3 pb-0">
     <StateCardComponent />
-    <StateCardComponent />
-    <StateCardComponent />
-  </section>
+  </v-container>
 </template>
 
 <script>
@@ -16,14 +14,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "../../sass/variables";
-
-.home {
-  .container__title {
-    color: $red;
-  }
-  .container__button {
-    background: $blue;
-  }
+.blue {
+  min-height: calc(100vh - 58px);
 }
 </style>

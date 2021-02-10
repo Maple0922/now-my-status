@@ -3,7 +3,7 @@
     <v-subheader class="pl-0">元気</v-subheader>
     <v-slider
       v-model="slider"
-      :thumb-size="24"
+      :thumb-size="28"
       thumb-label="always"
       min="1"
       max="9"
@@ -20,15 +20,7 @@ export default {
   name: "EditSliderComponent",
   data: () => ({
     satisfactionEmojis: ["😭", "😢", "☹️", "😐", "🙂", "😊", "😁", "😄", "😍"],
-    slider: 1,
+    slider: 5,
   }),
-  // computed: {
-  //   slider() {
-  //     return this.feel;
-  //   },
-  // },
 };
 </script>
-
-<style lang="scss" scoped>
-</style>>

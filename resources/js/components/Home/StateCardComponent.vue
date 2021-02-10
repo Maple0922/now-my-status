@@ -1,11 +1,18 @@
 <template>
-  <v-card class="mx-auto mb-4" max-width="400">
-    <StateTitleComponent />
-    <StateSelectComponent :stateNum="4" />
-    <StateSliderComponent :feel="5" />
-    <StateTextComponent :message="'今日はこんなことがありました'" />
-    <StateButtonsComponent />
-  </v-card>
+  <div>
+    <v-card
+      class="mx-auto mb-4"
+      max-width="400"
+      v-for="(state, key) in states"
+      :key="key"
+    >
+      <StateTitleComponent :updated="state.updated_at" :name="state.name" />
+      <StateSelectComponent :stateNum="state.state" />
+      <StateSliderComponent :feel="state.feel" />
+      <StateTextComponent :message="state.message" />
+      <StateButtonsComponent :id="state.id" />
+    </v-card>
+  </div>
 </template>
 
 <script>
@@ -23,6 +30,24 @@ export default {
     StateSelectComponent,
     StateTextComponent,
     StateButtonsComponent,
+  },
+  data: () => ({
+    states: [],
+  }),
+  methods: {
+    getStates() {
+      axios.get("/api/states").then((res) => {
+        this.states = res.data;
+      });
+    },
+    // deleteState(id) {
+    //   axios.delete("/api/state/" + id).then((res) => {
+    //     this.getStates();
+    //   });
+    // },
+  },
+  mounted() {
+    this.getStates();
   },
 };
 </script>
