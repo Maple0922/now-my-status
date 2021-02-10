@@ -1,13 +1,7 @@
 <template>
-  <v-col cols="12">
+  <v-col cols="12" class="py-0">
     <v-subheader class="pl-0">ひとこと</v-subheader>
-    <v-textarea
-      solo
-      name="input-7-4"
-      v-model="message"
-      readonly
-      label="Solo textarea"
-    ></v-textarea>
+    <p class="rounded-lg grey lighten-4 message pa-3">{{ message }}</p>
   </v-col>
 </template>
 
@@ -17,6 +11,3 @@ export default {
   props: ["message"],
 };
 </script>
-
-<style lang="scss" scoped>
-</style>>

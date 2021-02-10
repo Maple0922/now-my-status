@@ -1,7 +1,7 @@
 <template>
-  <header>
-    <h1>Stateboard</h1>
-  </header>
+  <v-app-bar fixed color="white">
+    <v-toolbar-title>Stateboard</v-toolbar-title>
+  </v-app-bar>
 </template>
 
 <script>
@@ -14,20 +14,6 @@ export default {
 @import "../../sass/variables";
 
 header {
-  width: 100%;
-  height: 60px;
-  // background: $indigo;
-  border-bottom: 1px solid $lightgray;
-  // box-shadow: 1px 0 3px 0 $gray;
-  display: flex;
-  padding: 2px 24px 0;
-  align-items: center;
   font-family: "Titillium Web", sans-serif;
-
-  h1 {
-    font-size: 24px;
-    color: $black;
-    margin: 0;
-  }
 }
 </style>

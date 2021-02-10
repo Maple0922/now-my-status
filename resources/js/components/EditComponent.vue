@@ -1,9 +1,7 @@
 <template>
-  <v-app>
-    <section class="container edit">
-      <StateEditComponent />
-    </section>
-  </v-app>
+  <v-container class="orange lighten-3">
+    <StateEditComponent />
+  </v-container>
 </template>
 
 <script>
@@ -16,11 +14,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "../../sass/variables";
-
-.edit {
-  .container__title {
-    color: $blue;
-  }
+.orange {
+  min-height: calc(100vh - 58px);
 }
 </style>

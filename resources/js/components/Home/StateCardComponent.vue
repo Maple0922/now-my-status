@@ -1,21 +1,15 @@
 <template>
-  <v-card class="mx-auto" max-width="400">
-    <v-card-title class="font-weight-bold"
-      >Futo Nakajima<span class="font-weight-regular d-inline-block ml-2">
-        のstate</span
-      ></v-card-title
-    >
-    <v-card-subtitle class="pb-0"
-      >Last updated: 2021-02-01 19:36</v-card-subtitle
-    >
+  <v-card class="mx-auto mb-4" max-width="400">
+    <StateTitleComponent />
+    <StateSelectComponent :stateNum="4" />
     <StateSliderComponent :feel="5" />
-    <StateSelectComponent :stateNum="2" />
-    <StateTextComponent :message="'wowowow'" />
+    <StateTextComponent :message="'今日はこんなことがありました'" />
     <StateButtonsComponent />
   </v-card>
 </template>
 
 <script>
+import StateTitleComponent from "./StateCard/StateTitleComponent";
 import StateSliderComponent from "./StateCard/StateSliderComponent";
 import StateSelectComponent from "./StateCard/StateSelectComponent";
 import StateTextComponent from "./StateCard/StateTextComponent";
@@ -24,6 +18,7 @@ import StateButtonsComponent from "./StateCard/StateButtonsComponent";
 export default {
   name: "StateCardComponent",
   components: {
+    StateTitleComponent,
     StateSliderComponent,
     StateSelectComponent,
     StateTextComponent,

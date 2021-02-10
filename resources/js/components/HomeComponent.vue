@@ -1,9 +1,9 @@
 <template>
-  <v-app>
-    <section class="container home">
-      <StateCardComponent />
-    </section>
-  </v-app>
+  <section class="container home blue lighten-3">
+    <StateCardComponent />
+    <StateCardComponent />
+    <StateCardComponent />
+  </section>
 </template>
 
 <script>

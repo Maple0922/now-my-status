@@ -1,6 +1,6 @@
 <template>
   <v-card-actions class="flex-row justify-end">
-    <v-btn color="purple" dark :to="{ name: 'edit' }">Edit</v-btn>
+    <v-btn color="orange" dark :to="{ name: 'edit' }">Edit</v-btn>
   </v-card-actions>
 </template>
 

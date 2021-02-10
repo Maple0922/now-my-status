@@ -1,8 +1,8 @@
 <template>
-  <v-col cols="12">
+  <v-col cols="12" class="py-0">
     <v-subheader class="pl-0">ひとこと</v-subheader>
     <v-textarea
-      solo
+      filled
       name="message"
       v-model="message"
       label="Enter some message!"
@@ -13,7 +13,9 @@
 <script>
 export default {
   name: "EditTextComponent",
-  message: "",
+  data: () => ({
+    message: "",
+  }),
 };
 </script>
 

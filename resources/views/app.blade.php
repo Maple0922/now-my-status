@@ -16,8 +16,11 @@
 
 <body>
   <div id="app">
-    <header-component></header-component>
-    <router-view></router-view>
+    <v-app>
+      <header-component></header-component>
+      <space-component></space-component>
+      <router-view></router-view>
+    </v-app>
   </div>
   <!-- Scripts -->
   <script src="{{ mix('/js/app.js') }}" defer></script>

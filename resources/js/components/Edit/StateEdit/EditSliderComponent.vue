@@ -1,5 +1,5 @@
 <template>
-  <v-col cols="12">
+  <v-col cols="12" class="py-0">
     <v-subheader class="pl-0">元気</v-subheader>
     <v-slider
       v-model="slider"
