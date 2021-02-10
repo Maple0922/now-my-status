@@ -4,7 +4,7 @@
     <EditSelectComponent />
     <EditSliderComponent />
     <EditTextComponent />
-    <EditButtonsComponent :id="state.id" />
+    <EditButtonsComponent :id="parseInt(id)" />
   </v-card>
 </template>
 

@@ -8,12 +8,16 @@
 <script>
 export default {
   name: "StateButtonsComponent",
+  props: ["id"],
   methods: {
     update: () => {
       if (confirm("更新してよろしいですか？")) {
         alert("Updated!!");
       }
     },
+  },
+  mounted() {
+    console.log(typeof this.id);
   },
 };
 </script>
