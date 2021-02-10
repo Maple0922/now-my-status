@@ -5,10 +5,11 @@
       :items="items"
       item-text="text"
       item-value="id"
-      v-model="state"
+      :value="nowState"
       label="Select a state!"
       solo
       class="bg-grey"
+      @change="updateChildSelect"
     ></v-select>
   </v-col>
 </template>
@@ -26,9 +27,10 @@ export default {
     ],
     state: 0,
   }),
-  computed: {
-    nowState() {
-      return this.items[this.stateNum];
+  props: ["nowState"],
+  methods: {
+    updateChildSelect(select) {
+      this.$emit("updateChildSelect", select);
     },
   },
 };

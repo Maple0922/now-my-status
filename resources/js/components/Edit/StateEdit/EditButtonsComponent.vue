@@ -21,13 +21,13 @@ export default {
       });
     },
     submit() {
-      axios.put("/api/states/" + this.id, this.state).then((res) => {
+      axios.put("/api/states/" + this.id, this.state).then(() => {
         this.$router.push({ name: "home" });
       });
     },
   },
   mounted() {
-    console.log(typeof this.id);
+    // console.log(typeof this.id);
     this.getState();
   },
 };
