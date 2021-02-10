@@ -13,7 +13,7 @@
       :nowMessage="state.message"
       @updateChildText="updateText"
     />
-    <EditButtonsComponent :id="parseInt(id)" />
+    <EditButtonsComponent :id="parseInt(id)" @submitChild="submit" />
   </v-card>
 </template>
 
@@ -41,27 +41,21 @@ export default {
     getState(id) {
       axios.get("/api/states/" + id).then((res) => {
         this.state = res.data;
-        console.log(this.state);
       });
     },
     updateSelect(select) {
       this.state.state = select;
-      this.debug();
     },
     updateSlider(slider) {
       this.state.feel = slider;
-      this.debug();
     },
     updateText(text) {
       this.state.message = text;
-      this.debug();
     },
-    debug() {
-      console.log(`id:${this.state.id}`);
-      console.log(`name:${this.state.name}`);
-      console.log(`select:${this.state.state}`);
-      console.log(`slider:${this.state.feel}`);
-      console.log(`text:${this.state.message}`);
+    submit() {
+      axios.put("/api/states/" + this.id, this.state).then(() => {
+        this.$router.push({ name: "home" });
+      });
     },
   },
   mounted() {

@@ -7,6 +7,13 @@ use Illuminate\Support\Carbon;
 
 class State extends Model
 {
+
+    protected $fillable = [
+        'feel',
+        'state',
+        'message',
+    ];
+
     public function getCreatedAtAttribute($value)
     {
         $date = Carbon::parse($value);

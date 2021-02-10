@@ -1,6 +1,6 @@
 <template>
   <v-card-actions class="flex-row justify-end">
-    <v-btn color="primary" @click="submit">Update</v-btn>
+    <v-btn color="primary" @click="submitChild">Update</v-btn>
     <v-btn :to="{ name: 'home' }">Cancel</v-btn>
   </v-card-actions>
 </template>
@@ -20,14 +20,11 @@ export default {
         this.state = res.data;
       });
     },
-    submit() {
-      axios.put("/api/states/" + this.id, this.state).then(() => {
-        this.$router.push({ name: "home" });
-      });
+    submitChild() {
+      this.$emit("submitChild");
     },
   },
   mounted() {
-    // console.log(typeof this.id);
     this.getState();
   },
 };

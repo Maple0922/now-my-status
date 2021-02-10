@@ -1,5 +1,5 @@
 <template>
-  <v-container class="home blue lighten-3 pb-0">
+  <v-container class="home grey lighten-4 pb-0">
     <StateCardComponent />
   </v-container>
 </template>
@@ -14,7 +14,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.blue {
+.grey {
   min-height: calc(100vh - 58px);
 }
 </style>

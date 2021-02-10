@@ -1,5 +1,5 @@
 <template>
-  <v-container class="orange lighten-3 pb-0">
+  <v-container class="grey darken-4 pb-0">
     <StateEditComponent :id="id" />
   </v-container>
 </template>
@@ -15,7 +15,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.orange {
+.grey {
   min-height: calc(100vh - 58px);
 }
 </style>

@@ -17,7 +17,7 @@ class StatesTableSeeder extends Seeder
         $states = [
             [
                 'name' => 'Futo',
-                'feel' => 5,
+                'feel' => 6,
                 'state' => 3,
                 'message' => 'こんにちは'
             ],
