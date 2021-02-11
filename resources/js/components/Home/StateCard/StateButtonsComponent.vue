@@ -1,12 +1,12 @@
 <template>
-  <v-card-actions class="flex-row justify-end">
+  <v-container class="d-flex flex-row justify-end">
     <v-btn color="blue darken-4" dark :to="{ name: 'edit', params: { id: id } }"
       >Edit</v-btn
     >
     <!-- <v-btn color="red" dark :to="{ name: 'delete', params: { id: id } }"
       >Delete</v-btn
     > -->
-  </v-card-actions>
+  </v-container>
 </template>
 
 <script>

@@ -1,8 +1,8 @@
 <template>
-  <v-card-actions class="flex-row justify-end">
-    <v-btn color="primary" @click="submitChild">Update</v-btn>
+  <v-container class="d-flex flex-row justify-end">
+    <v-btn color="mr-3 primary" @click="submitChild">Update</v-btn>
     <v-btn :to="{ name: 'home' }">Cancel</v-btn>
-  </v-card-actions>
+  </v-container>
 </template>
 
 <script>

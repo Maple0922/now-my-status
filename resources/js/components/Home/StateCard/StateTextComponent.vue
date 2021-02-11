@@ -1,7 +1,7 @@
 <template>
   <v-col cols="12" class="py-0">
     <v-subheader class="pl-0">ひとこと</v-subheader>
-    <p class="rounded-lg grey lighten-2 message pa-3 text-body-2">
+    <p class="rounded grey lighten-3 message pa-3 mb-0 text-body-2">
       {{ message }}
     </p>
   </v-col>
