@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Item;
 use App\Models\State;
 use Illuminate\Http\Request;
 
@@ -34,5 +35,15 @@ class StateController extends Controller
         $state->delete();
 
         return $state;
+    }
+
+    public function items()
+    {
+        return Item::all();
+    }
+
+    public function item(Int $id)
+    {
+        return Item::where('id', $id)->first();
     }
 }

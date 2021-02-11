@@ -40,11 +40,6 @@ export default {
         this.states = res.data;
       });
     },
-    // deleteState(id) {
-    //   axios.delete("/api/state/" + id).then((res) => {
-    //     this.getStates();
-    //   });
-    // },
   },
   mounted() {
     this.getStates();
