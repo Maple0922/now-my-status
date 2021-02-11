@@ -60,6 +60,9 @@ export default {
   },
   mounted() {
     this.getState(this.id);
+    setTimeout(() => {
+      this.$emit("endLoading");
+    }, 300);
   },
 };
 </script>

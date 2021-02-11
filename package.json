@@ -28,5 +28,8 @@
         "vue-router": "^3.5.1",
         "vue-template-compiler": "^2.6.10",
         "vuetify": "^2.4.3"
+    },
+    "dependencies": {
+        "vue-loading-template": "^1.3.2"
     }
 }
