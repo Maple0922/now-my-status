@@ -10,7 +10,7 @@
       @change="updateChildSlider"
     >
       <template v-slot:prepend>
-        <p style="font-size: 24px">{{ satisfactionEmojis[slider - 1] }}</p>
+        <p style="font-size: 24px">{{ satisfactionEmojis[nowFeel - 1] }}</p>
       </template>
     </v-slider>
   </v-col>
@@ -22,7 +22,7 @@ export default {
   props: ["nowFeel"],
   data: () => ({
     satisfactionEmojis: ["😭", "😢", "☹️", "😐", "🙂", "😊", "😁", "😄", "😍"],
-    slider: 5,
+    slider: "",
   }),
   methods: {
     updateChildSlider(slider) {
