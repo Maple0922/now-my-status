@@ -59,7 +59,7 @@ export default {
     },
   },
   mounted() {
-    this.getState(this.id).then(() => {
+    this.getState(this.id).then((id) => {
       this.$emit("endLoading");
     });
   },

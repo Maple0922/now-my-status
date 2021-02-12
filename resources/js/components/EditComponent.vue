@@ -33,5 +33,7 @@ export default {
 <style lang="scss" scoped>
 .grey {
   min-height: calc(100vh - 56px);
+  position: relative;
+  top: -80px;
 }
 </style>
