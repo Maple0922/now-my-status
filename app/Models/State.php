@@ -18,13 +18,13 @@ class State extends Model
     {
         $date = Carbon::parse($value);
         $date->addHours(9);
-        return $date->format('Y-m-d H:i');
+        return $date->format('Y-m-d H:i:s');
     }
 
     public function getUpdatedAtAttribute($value)
     {
         $date = Carbon::parse($value);
         $date->addHours(9);
-        return $date->format('Y-m-d H:i');
+        return $date->format('Y-m-d H:i:s');
     }
 }
