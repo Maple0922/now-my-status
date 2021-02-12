@@ -58,13 +58,14 @@ export default {
       });
     },
   },
-  created() {
-    this.getState(this.id);
-  },
   mounted() {
-    this.$nextTick(function () {
+    this.getState(this.id);
+    // this.$nextTick(function () {
+    //   this.$emit("endLoading");
+    // });
+    setTimeout(() => {
       this.$emit("endLoading");
-    });
+    }, 700);
   },
 };
 </script>

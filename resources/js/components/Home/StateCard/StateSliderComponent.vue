@@ -5,6 +5,9 @@
       v-model="slider"
       :thumb-size="28"
       thumb-label="always"
+      :color="'purple darken-4'"
+      :thumb-color="'purple darken-4'"
+      :track-color="'grey lighten-2'"
       readonly
       min="1"
       max="9"

@@ -1,5 +1,5 @@
 <template>
-  <v-app-bar fixed color="blue darken-4">
+  <v-app-bar fixed color="purple darken-4">
     <v-toolbar-title class="white--text text-h6">Stateboard</v-toolbar-title>
   </v-app-bar>
 </template>

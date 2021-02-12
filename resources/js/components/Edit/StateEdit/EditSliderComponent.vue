@@ -6,6 +6,9 @@
       thumb-label="always"
       min="1"
       max="9"
+      :color="'purple darken-4'"
+      :thumb-color="'purple darken-4'"
+      :track-color="'grey lighten-2'"
       :value="nowFeel"
       @change="updateChildSlider"
     >
