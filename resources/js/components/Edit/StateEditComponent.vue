@@ -59,10 +59,9 @@ export default {
     },
   },
   mounted() {
-    this.getState(this.id);
-    setTimeout(() => {
+    this.getState(this.id).then(() => {
       this.$emit("endLoading");
-    }, 300);
+    });
   },
 };
 </script>
