@@ -5,6 +5,7 @@
       v-show="loading"
       type="beat"
       color="skyblue"
+      class="loading"
       :size="{ width: '50px', height: '50px' }"
     />
   </v-container>
@@ -34,5 +35,9 @@ export default {
 .grey {
   min-height: calc(100vh + 24px);
   margin-top: -70px;
+}
+.loading {
+  position: relative;
+  top: 200px;
 }
 </style>

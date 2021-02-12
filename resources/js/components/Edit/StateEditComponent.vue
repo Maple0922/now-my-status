@@ -65,7 +65,7 @@ export default {
     // });
     setTimeout(() => {
       this.$emit("endLoading");
-    }, 700);
+    }, 1000);
   },
 };
 </script>
