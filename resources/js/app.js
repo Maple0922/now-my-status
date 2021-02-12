@@ -15,7 +15,7 @@ Vue.use(Vuetify);
 Vue.component('HeaderComponent', HeaderComponent);
 Vue.component('SpaceComponent', SpaceComponent);
 
-
+document.querySelector('div').classList.add('delete');
 
 const app = new Vue({
     el: '#app',
