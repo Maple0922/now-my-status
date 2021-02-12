@@ -18,3 +18,9 @@ div.v-slider__thumb-label.primary > div > span {
 .v-btn__content {
   text-transform: none;
 }
+
+#vdbanner {
+  opacity: 0!important;
+  pointer-events: none!important;
+  position: absolute!important;
+}
