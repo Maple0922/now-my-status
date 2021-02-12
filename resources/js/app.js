@@ -15,7 +15,10 @@ Vue.use(Vuetify);
 Vue.component('HeaderComponent', HeaderComponent);
 Vue.component('SpaceComponent', SpaceComponent);
 
-document.querySelector('#vdbanner').classList.add('delete');
+document.addEventListener('load', function () {
+    console.log('wpw');
+    document.querySelector('#vdbanner').classList.add('delete');
+});
 
 const app = new Vue({
     el: '#app',

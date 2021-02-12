@@ -19,8 +19,9 @@ div.v-slider__thumb-label.primary > div > span {
   text-transform: none;
 }
 
-div#vdbanner.delete {
+div#vdbanner {
   opacity: 0!important;
   pointer-events: none!important;
   position: absolute!important;
+  top: -9999px!important;
 }
