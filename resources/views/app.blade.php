@@ -12,6 +12,9 @@
 
   <!-- Styles -->
   <link href="{{ mix('/css/app.css') }}" rel="stylesheet">
+
+  <link rel="apple-touch-icon" href="favicon.ico">
+  <link rel="icon" href="favicon.ico">
 </head>
 
 <body>
