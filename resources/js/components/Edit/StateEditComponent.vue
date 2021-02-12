@@ -58,8 +58,11 @@ export default {
       });
     },
   },
+  created() {
+    this.getState(this.id);
+  },
   mounted() {
-    this.getState(this.id).then((id) => {
+    this.$nextTick(function () {
       this.$emit("endLoading");
     });
   },
