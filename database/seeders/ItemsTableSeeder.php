@@ -15,12 +15,14 @@ class ItemsTableSeeder extends Seeder
     public function run()
     {
         $items = [
-            ['text' => '💻  仕事中', 'color' => 'blue'],
-            ['text' => '👔  就活中', 'color' => 'light-blue'],
-            ['text' => '🛠  開発中', 'color' => 'blue-grey'],
-            ['text' => '🌙  睡眠中', 'color' => 'purple'],
-            ['text' => '☕️  休憩中', 'color' => 'green'],
             ['text' => '🍽  食事中', 'color' => 'orange'],
+            ['text' => '☕️  休憩中', 'color' => 'green'],
+            ['text' => '👔  就活中', 'color' => 'light-blue'],
+            ['text' => '💻  仕事中', 'color' => 'blue'],
+            ['text' => '🛠  開発中', 'color' => 'blue-grey'],
+            ['text' => '📖  課題中', 'color' => 'lime'],
+            ['text' => '✏️  勉強中', 'color' => 'teal'],
+            ['text' => '🌙  睡眠中', 'color' => 'purple'],
             ['text' => '💦  多忙中', 'color' => 'cyan'],
             ['text' => '🌴  外出中', 'color' => 'yellow'],
             ['text' => '🙇‍♀️  生理中', 'color' => 'pink'],
